@@ -1,6 +1,6 @@
 FROM alpine:latest
 RUN apk update && \
-apk add maven default-jdk git tomcat9
+apk add maven git openjdk11
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git && cd boxfuse-sample-java-war-hello
 WORKDIR /boxfuse-sample-java-war-hello
 RUN mvn package
