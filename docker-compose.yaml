@@ -4,4 +4,4 @@ services:
     context: ./build
     dockerfile: Dockerfile
   volumes:
-      - ./for_warnic:/mnt
+    - ./for_warnic:/mnt
