@@ -8,7 +8,7 @@ services:
         target: /mnt
 
   tomcat:
-    image: tomcat:9.0.0.M9-alpine
+    image: tomcat:7.0.72-alpine
     ports:
       - "5555:8080"
     volumes:
