@@ -15,7 +15,7 @@ services:
       - type: volume
         source: warnic
         target: /usr/local/tomcat/webapps
-    depens_on:
+    depends_on:
       - build_app
 volumes:
   warnic:
