@@ -1,7 +1,7 @@
-version: "3"
+version: "3.3"
 services:
   build_app:
     build: .
     volumes:
-      - for_warnic:/mnt/build
-      - boxfuse-sample-java-war-hello-master:/opt/boxfuse
+      - ./for_warnic:/mnt/build
+      - ./boxfuse-sample-java-war-hello-master:/opt/boxfuse
