@@ -6,4 +6,4 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./for_warnic:/mnt
-      - ./build/boxfuse-sample-java-war-hello-master:/opt/
+      - ./build/boxfuse-sample-java-war-hello-master:/opt
