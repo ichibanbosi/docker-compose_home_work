@@ -5,5 +5,5 @@ services:
       context: ./build
       dockerfile: Dockerfile
     volumes:
-      - ./for_warnic:/mnt
-      - ./build/boxfuse-sample-java-war-hello-master:/opt
+      - ./for_warnic:/mnt/build
+      - ./build/boxfuse-sample-java-war-hello-master:/opt/boxfuse
