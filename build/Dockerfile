@@ -7,3 +7,5 @@ RUN touch /mnt/test.txt
 WORKDIR /opt
 RUN mvn package
 RUN cp /opt/target/hello-1.0.war /mnt
+VOLUME ["/opt"]
+VOLUME ["/mnt"]
