@@ -1,6 +1,6 @@
 FROM alpine:latest
 RUN apk update && \
-apk add maven openjdk11
+apk add maven openjdk11 git
 RUN touch /mnt/test.txt
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git && cd boxfuse-sample-java-war-hello
 WORKDIR /boxfuse-sample-java-war-hello
