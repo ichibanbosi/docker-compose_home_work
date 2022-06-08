@@ -6,4 +6,3 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./for_warnic:/mnt
-      - ./boxfuse-sample-java-war-hello-master:/
