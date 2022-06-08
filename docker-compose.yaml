@@ -1,9 +1,9 @@
-version: "2"
+version: "3"
 services:
   build_app:
     build:
       context: ./build
       dockerfile: Dockerfile
     volumes:
-      - ./for_warnic:/mnt
-      - ./build/boxfuse-sample-java-war-hello-master:/opt
+      - "./for_warnic:/mnt"
+      - "./build/boxfuse-sample-java-war-hello-master:/opt"
