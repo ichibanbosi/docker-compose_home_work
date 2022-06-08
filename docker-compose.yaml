@@ -3,6 +3,18 @@ services:
   build_app:
     build: .
     volumes:
-      - ./for_warnic:/mnt
-      #- ./boxfuse-sample-java-war-hello-master:/opt
+      - type: volume
+        source: warnic
+        target: /mnt
+
+  tomcat:
+    image: tomcat:9-jre11-openjdk-slim-buster
+    ports:
+      - "5555:8080"
+    volumes:
+      - type: volume
+        source: warnic
+        target: /usr/local/tomcat/webapps
+volumes:
+  warnic:
 
