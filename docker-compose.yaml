@@ -1,5 +1,7 @@
 version: "3"
 services:
-  build: ./build
+  build:
+    context: ./build
+    dockerfile: Dockerfile
   volumes:
     - ./for_warnic:/mnt/
